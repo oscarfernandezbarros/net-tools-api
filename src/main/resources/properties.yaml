@@ -1,4 +1,5 @@
 # Default Properties
+autodiscovery: "1234"
 user: "vpc-tools"
 pass: "SomePass"
 httpPort: "8081"

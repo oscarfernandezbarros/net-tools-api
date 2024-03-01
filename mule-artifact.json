@@ -1,6 +1,4 @@
 {
 	"minMuleVersion":"4.1.3",
-	"secureProperties": [
-		"pass"
-	]
+	"secureProperties": ["pass"]
 }

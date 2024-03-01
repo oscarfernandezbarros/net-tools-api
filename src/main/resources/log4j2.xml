@@ -16,8 +16,9 @@
             <DefaultRolloverStrategy max="10"/>
         </RollingFile>
     </Appenders>
+
     <Loggers>
-        
+       
         <!-- Http Logger shows wire traffic on DEBUG. -->
         <!--AsyncLogger name="org.mule.service.http.impl.service.HttpMessageLogger" level="DEBUG" /-->
         <AsyncLogger name="org.mule.service.http" level="WARN"/>
@@ -29,5 +30,8 @@
         <AsyncRoot level="INFO">
             <AppenderRef ref="file" />
         </AsyncRoot>
+        
+        
     </Loggers>
 </Configuration>
+

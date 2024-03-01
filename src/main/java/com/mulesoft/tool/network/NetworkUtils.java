@@ -126,7 +126,8 @@ public class NetworkUtils {
         writer.flush();
         writer.close();
 		SequenceInputStream sis = new SequenceInputStream(p.getInputStream(), p.getErrorStream());
-		java.util.Scanner s = new java.util.Scanner(sis).useDelimiter("\\A");
-		return s.hasNext() ? s.next() : "";
+		try (java.util.Scanner s = new java.util.Scanner(sis).useDelimiter("\\A")) {
+			return s.hasNext() ? s.next() : "";
+		}
 	}
 }
